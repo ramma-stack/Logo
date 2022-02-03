@@ -30,7 +30,7 @@
 
 <section class="text-gray-700 body-font overflow-hidden bg-gary-100">
     <div class="container px-5 py-5 mx-auto">
-        <form method="post" action="/order/{{ $page->id }}" class="lg:w-4/5 mx-auto flex flex-wrap">
+        <form method="post" action="/order/{{ $page->id }}" onsubmit="return checked()" class="lg:w-4/5 mx-auto flex flex-wrap">
             @csrf
             <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="../image/products/{{ $pageimage }}/{{ $page->image }}">
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
@@ -77,7 +77,7 @@
                 <div class="flex flex-col mt-6 pb-5 border-b-2 border-gray-200 mb-5">
                     <div id="colors" class="flex mb-5 justify-start items-center">
                         @foreach ($page->color as $colors)
-                        <input type="checkbox" name="colors[]" value="{{ $colors }}" class="form-checkbox mr-2 w-5 h-5 rounded-xl border focus:ring-2 focus:ring-blue-500 border-gray-400" required>
+                        <input type="checkbox" name="colors[]" value="{{ $colors }}" class="form-checkbox mr-2 w-5 h-5 rounded-xl border focus:ring-2 focus:ring-blue-500 border-gray-400" >
                         <div class="ring-2 ring-gray-200 mr-4 w-6 h-6 mr-2.5 rounded-full bg-{{ $colors }}-900"></div>
                         @endforeach
                     </div>

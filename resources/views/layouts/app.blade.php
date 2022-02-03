@@ -27,7 +27,7 @@
 
             <nav class="bg-white border-gray-200 mx-5 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
                 <div class="container flex flex-wrap justify-between items-center mx-auto">
-                    <a href="#" class="flex">
+                    <a href="/" class="flex">
                         <div class=" bg-gradient-to-r from-purple-400 to-red-400 rounded-md w-10 h-10 mr-2"></div>
                         <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Logo</span>
                     </a>

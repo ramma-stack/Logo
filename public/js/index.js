@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $('#checkBtn').on('click', function () {
         console.log("hello");
-        var color = $('#colors :checkbox[required]');
+        var color = $('#colors :checkbox');
         color.change(function () {
             if (color.is(':checked')) {
                 color.removeAttr('required');
@@ -15,7 +15,7 @@ $(document).ready(function () {
             }
         });
 
-        var size = $('#sizes :checkbox[required]');
+        var size = $('#sizes :checkbox');
         size.change(function () {
             if (size.is(':checked')) {
                 size.removeAttr('required');
